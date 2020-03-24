@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fadeout video background on scroll</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <section>
+       <video src="video.mp4" autoplay='' muted='' loop=''></video>
+   </section>
+    <section>
+        <div class="content">
+            <h2>Fadeout video background on scroll </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur rerum accusantium excepturi autem molestiae ducimus reiciendis, doloribus eaque dolore, asperiores quasi ipsa quis laboriosam aspernatur quo cupiditate architecto dolorem. Neque mollitia corporis harum obcaecati voluptas quia tempora culpa dolor magni, facilis cum ab ipsam dolorem libero earum! Maiores iste, consequatur sit voluptas, quos quo. Et eaque perferendis fugiat dolore asperiores, sequi quibusdam! Deserunt officia labore debitis, necessitatibus quo minima aperiam modi id? Hic exercitationem iure magnam rerum aspernatur nemo dolor fuga eum aperiam molestiae possimus, dolorum dolore placeat. Officiis hic repudiandae nisi error nobis ipsum cupiditate, laborum obcaecati est nostrum illum rem tenetur ea, veritatis reprehenderit rerum. Quod alias illo quae minima animi. Voluptatum esse eius neque, vel doloribus. Molestias fugiat in voluptate illo temporibus, reprehenderit perferendis vero, porro, accusantium dignissimos omnis nulla magni non optio sit laborum delectus eligendi unde rerum praesentium minima tempora libero quos eius dolorem. Repellendus.
+                </p>              
+           
+        </div>
+    </section>
+    <script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function(){
+            let value = 1 + window.scrollY / -600;
+            video.style.opacity = value;
+        })        
+    </script>
+</body>
+</html>
