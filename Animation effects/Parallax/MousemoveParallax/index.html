@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.5 Parallax Effect</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section>
+        <div id="bg"></div>
+        <h2>2.50 Parallax Effects</h2>
+        <img class="girl" src="img.png" alt="girl">
+    </section>
+    <script type="text/javascript">
+        let position = document.documentElement;
+        position.addEventListener("mousemove", e =>{
+            position.style.setProperty('--x', e.clientX + "px");
+        })
+    
+    </script>
+</body>
+</html>
