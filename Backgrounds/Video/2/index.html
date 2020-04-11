@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scale Icon With Video BG</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="banner">
+        <video autoplay="" muted="" loop="">
+            <source src="media/Pexels%20Videos%202056011.mp4" type="video/mp4">
+        </video>
+        <div id="bg"></div>
+    </div>
+    <script type="text/javascript">
+        let bg = document.querySelector('#bg');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            bg.style.backgroundSize = 100 + value*2 +"px";
+        })
+    </script>
+</body>
+</html>
